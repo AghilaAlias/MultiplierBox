@@ -1,0 +1,70 @@
+.body{
+    background: rgb(210, 210, 219);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .multipliers{
+      margin: 20px;
+  }
+  .numberElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    font: bold 11px Arial;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    box-shadow: #CCCCCC
+    
+  }
+  .numberElementSelected{
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: rgb(18, 224, 18);
+    color: #FFF;
+    padding: 5px;
+    border: 1px solid;
+  }
+  
+  /* Targetting common breakpoints */
+  
+  @media (min-width: 1281px) {   /** desktop++ **/
+      .multipliers {
+      column-count: 3;
+    }    
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {  /** laptops && very large hand helds **/
+      .multipliers {
+      column-count: 3;
+    }    
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {  /** Tablets & larger smart phones **/
+      .multipliers {
+      column-count: 2;
+    }    
+  }
+  @media (min-width: 481px) and (max-width: 767px) {  /** Smart phones++ **/
+      .multipliers {
+      column-count: 1;
+    }    
+    .numberElement{
+        width: 70%;
+        height: 30px;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 480px) {  
+      .multipliers {
+      column-count: 1;
+    }
+    .numberElement{
+        width: 70%;
+        height: 30px;
+    }  
+  }
